@@ -114,12 +114,72 @@ table {
 	src: url('webFonts/LDColarinoType27/font.woff2') format('woff2'), url('webFonts/LDColarinoType27/font.woff') format('woff');
   }
 
+.LDPacardoThin {
+		font-family: "LDPacardo-Thin";
+}
+
+.LDPacardoThinItalic {
+		font-family: "LDPacardo-ThinItalic";
+}
+
+.LDPacardoRegular {
+	font-family: "LDPacardo-Regular";
+}
+
+.LDPacardoItalic {
+	font-family: "LDPacardo-Italic";
+}
+
+.LDPacardoBold {
+	font-family: "LDPacardo-Bold";
+}
+
+.LDPacardoBoldItalic {
+	font-family: "LDPacardo-BoldItalic";
+}
+
+.TheHandnature {
+	font-family: TheHandnature;
+}
+
+.TheHandnatureSwash {
+	font-family: "TheHandnature-Swash";
+}
+
+.TTTrailersVariable {
+	font-family: TTTrailersVariable;
+}
+
+.LDColarinoType13 {
+	font-family: "LDColarino-Type13";
+}
+
+.LDColarinoType18 {
+	font-family: "LDColarino-Type18";
+}
+
+.LDColarinoType19 {
+	font-family: "LDColarino-Type19";
+}
+
+.LDColarinoType21 {
+	font-family: "LDColarino-Type21";
+}
+
+.LDColarinoType27 {
+	font-family: "LDColarino-Type27";
+}
+
 
 /* ********************************************************* */
 /* *************** Mobile Styling Begins Here ************** */
 
-body { font-family: "LDColarino-Type19"; }
+body { font-family: "LDPacardo-Thin"; }
 
+p {
+	font-family: "TTTrailersVariable";
+	font-size: 36px;
+}
 
 /* CSS code related to the photography credits - Start */
 
