@@ -1,0 +1,235 @@
+@import url("//hello.myfonts.net/count/409c10");
+
+/* This is my main CSS file for the final web portfolio project - MTM6201_010 - Web Development II */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================================================================================== */
+/* ============= Final Project - Web Portfolio by Mark Daniels ============= */
+/* ================================================================================== */
+
+/* Loading fonts */
+
+@font-face {
+	font-family: "LDPacardo-BoldItalic";
+	src: url('webFonts/LDPacardoBoldItalic/font.woff2') format('woff2'), url('webFonts/LDPacardoBoldItalic/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "TheHandnature";
+	src: url('webFonts/TheHandnature/font.woff2') format('woff2'), url('webFonts/TheHandnature/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDPacardo-Regular";
+	src: url('webFonts/LDPacardoRegular/font.woff2') format('woff2'), url('webFonts/LDPacardoRegular/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDColarino-Type21";
+	src: url('webFonts/LDColarinoType21/font.woff2') format('woff2'), url('webFonts/LDColarinoType21/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDPacardo-Thin";
+	src: url('webFonts/LDPacardoThin/font.woff2') format('woff2'), url('webFonts/LDPacardoThin/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDColarino-Type19";
+	src: url('webFonts/LDColarinoType19/font.woff2') format('woff2'), url('webFonts/LDColarinoType19/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "TheHandnature-Swash";
+	src: url('webFonts/TheHandnatureSwash/font.woff2') format('woff2'), url('webFonts/TheHandnatureSwash/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDPacardo-Italic";
+	src: url('webFonts/LDPacardoItalic/font.woff2') format('woff2'), url('webFonts/LDPacardoItalic/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDPacardo-ThinItalic";
+	src: url('webFonts/LDPacardoThinItalic/font.woff2') format('woff2'), url('webFonts/LDPacardoThinItalic/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "TTTrailersVariable";
+	src: url('webFonts/TTTrailersVariable/font.woff2') format('woff2'), url('webFonts/TTTrailersVariable/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDColarino-Type18";
+	src: url('webFonts/LDColarinoType18/font.woff2') format('woff2'), url('webFonts/LDColarinoType18/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDPacardo-Bold";
+	src: url('webFonts/LDPacardoBold/font.woff2') format('woff2'), url('webFonts/LDPacardoBold/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDColarino-Type13";
+	src: url('webFonts/LDColarinoType13/font.woff2') format('woff2'), url('webFonts/LDColarinoType13/font.woff') format('woff');
+  }
+  @font-face {
+	font-family: "LDColarino-Type27";
+	src: url('webFonts/LDColarinoType27/font.woff2') format('woff2'), url('webFonts/LDColarinoType27/font.woff') format('woff');
+  }
+
+
+/* ********************************************************* */
+/* *************** Mobile Styling Begins Here ************** */
+
+body { font-family: "LDColarino-Type19"; }
+
+
+/* CSS code related to the photography credits - Start */
+
+.image-credit-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+	
+.image-credit-wrapper .image-credit {
+	position: absolute;
+	right: 0px;
+	bottom: 4px;
+}
+
+.image-credit {
+	background: rgba(0,0,0,.7);
+	color: #ccc;
+	display: inline-block;
+	font-size: 8px;
+	font-family: helvetica;
+	font-weight: 300;
+	padding: 5px 8px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/* CSS code related to the photography credits - End */
+
+
+
+
+
+/* CSS code related to the skip links styling - start */
+
+.skip-links{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+.skip-links a{
+	position: absolute;
+	top: -3em;
+	background-color: black;
+	color:white;
+	padding: .5em 1em;
+	font-weight: bold;
+  }
+  
+.skip-links a:focus{
+	top: 0;
+  }
+/* CSS code related to the skip links styling - end */
+
+
+  
+
+/* *************** Mobile Styling Ends Here *************** */
+/* ******************************************************** */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* ********************************************************** */
+/* *************** Tablet Styling Begins Here *************** */
+
+@media screen and (min-width: 600px) {
+
+
+
+} /* Tablet media screen bracket ends here */
+
+/* **************** Tablet Styling Ends Here **************** */
+/* ********************************************************** */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* ********************************************************** */
+/* *************** Desktop Styling Begins Here *************** */
+
+@media screen and (min-width: 992px) {
+
+	
+
+
+} /* Desktop media screen bracket ends here */
+
+/* **************** Desktop Styling Ends Here **************** */
+/* ********************************************************** */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* ******************************************************************** */
+/* *************** Extended Desktop Styling Begins Here *************** */
+
+@media screen and (min-width: 1920px) {
+
+
+
+} /* Extended Desktop media screen bracket ends here */
+
+
+/* ******************************************************************** */
+/* **************** Extended Desktop Styling Ends Here **************** */
+
+
+
+
+/*  Comments... I love comments!  LOL  }:-)  */
