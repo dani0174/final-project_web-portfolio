@@ -1,4 +1,4 @@
-@import url("//hello.myfonts.net/count/409c10");
+@import url("//hello.myfonts.net/count/409c4c");
 
 /* This is my main CSS file for the final web portfolio project - MTM6201_010 - Web Development II */
 
@@ -58,126 +58,84 @@ table {
 /* Loading fonts */
 
 @font-face {
-	font-family: "LDPacardo-BoldItalic";
-	src: url('webFonts/LDPacardoBoldItalic/font.woff2') format('woff2'), url('webFonts/LDPacardoBoldItalic/font.woff') format('woff');
-  }
-  @font-face {
-	font-family: "TheHandnature";
-	src: url('webFonts/TheHandnature/font.woff2') format('woff2'), url('webFonts/TheHandnature/font.woff') format('woff');
-  }
-  @font-face {
-	font-family: "LDPacardo-Regular";
-	src: url('webFonts/LDPacardoRegular/font.woff2') format('woff2'), url('webFonts/LDPacardoRegular/font.woff') format('woff');
-  }
-  @font-face {
-	font-family: "LDColarino-Type21";
-	src: url('webFonts/LDColarinoType21/font.woff2') format('woff2'), url('webFonts/LDColarinoType21/font.woff') format('woff');
-  }
-  @font-face {
 	font-family: "LDPacardo-Thin";
-	src: url('webFonts/LDPacardoThin/font.woff2') format('woff2'), url('webFonts/LDPacardoThin/font.woff') format('woff');
+	src: url('../webFonts/LDPacardoThin/font.woff2') format('woff2'), url('../webFonts/LDPacardoThin/font.woff') format('woff');
   }
-  @font-face {
-	font-family: "LDColarino-Type19";
-	src: url('webFonts/LDColarinoType19/font.woff2') format('woff2'), url('webFonts/LDColarinoType19/font.woff') format('woff');
-  }
-  @font-face {
-	font-family: "TheHandnature-Swash";
-	src: url('webFonts/TheHandnatureSwash/font.woff2') format('woff2'), url('webFonts/TheHandnatureSwash/font.woff') format('woff');
-  }
-  @font-face {
-	font-family: "LDPacardo-Italic";
-	src: url('webFonts/LDPacardoItalic/font.woff2') format('woff2'), url('webFonts/LDPacardoItalic/font.woff') format('woff');
-  }
-  @font-face {
-	font-family: "LDPacardo-ThinItalic";
-	src: url('webFonts/LDPacardoThinItalic/font.woff2') format('woff2'), url('webFonts/LDPacardoThinItalic/font.woff') format('woff');
-  }
-  @font-face {
-	font-family: "TTTrailersVariable";
-	src: url('webFonts/TTTrailersVariable/font.woff2') format('woff2'), url('webFonts/TTTrailersVariable/font.woff') format('woff');
-  }
-  @font-face {
-	font-family: "LDColarino-Type18";
-	src: url('webFonts/LDColarinoType18/font.woff2') format('woff2'), url('webFonts/LDColarinoType18/font.woff') format('woff');
-  }
-  @font-face {
+
+@font-face {
 	font-family: "LDPacardo-Bold";
-	src: url('webFonts/LDPacardoBold/font.woff2') format('woff2'), url('webFonts/LDPacardoBold/font.woff') format('woff');
+	src: url('../webFonts/LDPacardoBold/font.woff2') format('woff2'), url('../webFonts/LDPacardoBold/font.woff') format('woff');
   }
-  @font-face {
-	font-family: "LDColarino-Type13";
-	src: url('webFonts/LDColarinoType13/font.woff2') format('woff2'), url('webFonts/LDColarinoType13/font.woff') format('woff');
+
+@font-face {
+	font-family: "TheHandnature-Swash";
+	src: url('../webFonts/TheHandnatureSwash/font.woff2') format('woff2'), url('../webFonts/TheHandnatureSwash/font.woff') format('woff');
   }
-  @font-face {
-	font-family: "LDColarino-Type27";
-	src: url('webFonts/LDColarinoType27/font.woff2') format('woff2'), url('webFonts/LDColarinoType27/font.woff') format('woff');
+
+@font-face {
+	font-family: "LDPacardo-BoldItalic";
+	src: url('../webFonts/LDPacardoBoldItalic/font.woff2') format('woff2'), url('../webFonts/LDPacardoBoldItalic/font.woff') format('woff');
+  }
+
+@font-face {
+	font-family: "TheHandnature";
+	src: url('../webFonts/TheHandnature/font.woff2') format('woff2'), url('../webFonts/TheHandnature/font.woff') format('woff');
+  }
+
+@font-face {
+	font-family: "LDPacardo-Regular";
+	src: url('../webFonts/LDPacardoRegular/font.woff2') format('woff2'), url('../webFonts/LDPacardoRegular/font.woff') format('woff');
+  }
+
+@font-face {
+	font-family: "LDPacardo-ThinItalic";
+	src: url('../webFonts/LDPacardoThinItalic/font.woff2') format('woff2'), url('../webFonts/LDPacardoThinItalic/font.woff') format('woff');
+  }
+
+@font-face {
+	font-family: "TTTrailersVariable";
+	src: url('../webFonts/TTTrailersVariable/font.woff2') format('woff2'), url('../webFonts/TTTrailersVariable/font.woff') format('woff');
+  }
+
+@font-face {
+	font-family: "LDPacardo-Italic";
+	src: url('../webFonts/LDPacardoItalic/font.woff2') format('woff2'), url('../webFonts/LDPacardoItalic/font.woff') format('woff');
   }
 
 .LDPacardoThin {
-		font-family: "LDPacardo-Thin";
-}
-
+	font-family: "LDPacardo-Thin";
+	}
 .LDPacardoThinItalic {
-		font-family: "LDPacardo-ThinItalic";
-}
-
+	font-family: "LDPacardo-ThinItalic";
+	}
 .LDPacardoRegular {
 	font-family: "LDPacardo-Regular";
-}
-
+	}
 .LDPacardoItalic {
 	font-family: "LDPacardo-Italic";
-}
-
+	}
 .LDPacardoBold {
 	font-family: "LDPacardo-Bold";
-}
-
+	}
 .LDPacardoBoldItalic {
 	font-family: "LDPacardo-BoldItalic";
-}
-
+	}
 .TheHandnature {
 	font-family: TheHandnature;
-}
-
+	}
 .TheHandnatureSwash {
 	font-family: "TheHandnature-Swash";
-}
-
+	}
 .TTTrailersVariable {
 	font-family: TTTrailersVariable;
-}
-
-.LDColarinoType13 {
-	font-family: "LDColarino-Type13";
-}
-
-.LDColarinoType18 {
-	font-family: "LDColarino-Type18";
-}
-
-.LDColarinoType19 {
-	font-family: "LDColarino-Type19";
-}
-
-.LDColarinoType21 {
-	font-family: "LDColarino-Type21";
-}
-
-.LDColarinoType27 {
-	font-family: "LDColarino-Type27";
-}
+	}
 
 
 /* ********************************************************* */
 /* *************** Mobile Styling Begins Here ************** */
 
-body { font-family: "LDPacardo-Thin"; }
-
 p {
-	font-family: "TTTrailersVariable";
+	font-family: "LDPacardo-Regular";
 	font-size: 36px;
 }
 
