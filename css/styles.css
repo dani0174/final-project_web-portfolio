@@ -121,13 +121,13 @@ table {
 	font-family: "LDPacardo-BoldItalic";
 	}
 .TheHandnature {
-	font-family: TheHandnature;
+	font-family: "TheHandnature";
 	}
 .TheHandnatureSwash {
 	font-family: "TheHandnature-Swash";
 	}
 .TTTrailersVariable {
-	font-family: TTTrailersVariable;
+	font-family: "TTTrailersVariable";
 	}
 
 
@@ -138,6 +138,36 @@ p {
 	font-family: "LDPacardo-Regular";
 	font-size: 36px;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* CSS code related to the main navigation bar styling - start */
+
+.main-nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+  }
+  
+  .main-nav ul li {
+	flex: 1;
+	text-align: center;
+  }
+  
+  .main-nav ul li a {
+	display: block;
+	color: #271540;
+	font-family: "TTTrailersVariable";
+	font-size: 24px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  }
+/* CSS code related to the main navigation bar styling - end */
 
 /* CSS code related to the photography credits - Start */
 
