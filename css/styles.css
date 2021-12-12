@@ -136,12 +136,43 @@ table {
 
 p {
 	font-family: "LDPacardo-Regular";
-	font-size: 36px;
 }
 
 a {
     text-decoration: none;
 }
+
+img {
+	width: 100%;
+}
+
+header, footer {
+	margin: 0 auto;
+}
+
+header {
+	background-color: silver;
+}
+
+footer {
+	background-color: aquamarine;
+}
+
+h1 {
+	font-family: ;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
 
 /* CSS code related to the main navigation bar styling - start */
 
@@ -197,7 +228,27 @@ a {
 /* CSS code related to the photography credits - End */
 
 
+/* CSS code related to the footer navigation styling - start */
 
+  .footer-container {
+	  display: flex;
+	  justify-content: space-evenly;
+	  align-items: center;
+	  text-align: center;
+	  align-content: center;
+	  flex-direction: column;
+  }
+
+  .footer-container ul li a {
+	display: block;
+	color: ;
+	font-family: ;
+	font-size: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  }
+
+  /* CSS code related to the footer navigation styling - end */
 
 
 /* CSS code related to the skip links styling - start */
@@ -222,7 +273,84 @@ a {
 /* CSS code related to the skip links styling - end */
 
 
-  
+/* CSS code related to the main section sizing and styling - start */
+
+.welcome-content-container {
+	background-color: ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	align-self: center;
+	height: 100%;
+	padding: 20px;
+  }
+
+  .welcome-page-container {
+	  background-color: #F0C987;
+	  display: flex;
+	  flex-direction: column;
+  }
+/* CSS code related to the main section sizing and styling - end */
+
+
+/* CSS code related to the logo and hyperlink animations - start */
+
+.animation-logo {
+	animation-name: rotate;
+	transition: width 2s, height 2s, transform 2s;
+	transform: scale(1.0) rotate(0deg);
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+
+.animation-logo:hover {
+  	transform: scale(1.2);
+	transition: 0.5s;
+}
+
+.animation-logo:active {
+  transform: rotate(180deg) translateX(50rem) rotate(180deg) scale(2);
+  transition: 1s;
+}
+
+a:hover, button:hover {
+background-color: #137547;
+border: 1px solid #32CD32;
+}
+
+a:hover, button:hover .animation-logo {
+  animation-name: rotate;
+	transition: width 2s, height 2s, transform 2s;
+	transform: scale(1.0) rotate(0deg);
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+
+a:active, button:active {
+color:  white;
+background-color: #054A29;
+}
+
+.main-nav li:active {
+color:  white;
+background-color: #054A29;
+}
+
+@keyframes rotate {
+from {
+transform: rotateY(0deg);
+}
+
+to {
+transform: rotateY(360deg);
+}
+
+}
+/* CSS code related to the logo animation - end */
+
+
 
 /* *************** Mobile Styling Ends Here *************** */
 /* ******************************************************** */
