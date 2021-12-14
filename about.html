@@ -49,6 +49,7 @@
 
     <div class="container" id="top">  <!--  Note: Start of "container" section  -->
 
+
     <!-- =============== Header Section =============== -->
     <header class="site-header">
       <div class="header-container">
@@ -68,56 +69,47 @@
       </div> <!-- End of header-container -->
     </header> <!-- End of Header Section -->
 
+
     <!-- =============== Main Section =============== -->
-    <main class="main-container">
-      <div class="welcome-container">
-        <h1>Welcome to MARKY DEE!</h1>
-        
-          <picture class="background-picture">
-              <source 
-                srcset="./images/MD_welcome_page-low_resolution.svg"
-                media="all and (max-width:600px)"
-             />
-              <source 
-                srcset="./images/MD_welcome_page-med_res.jpg"
-                media="all and (min-width:601px) and (max-width:992px)"
-              />
-              <source 
-                srcset="./images/MD_welcome_page-high_res.jpg"
-                media="all and (min-width:993px)"
-              />
-              <img src="./images/MD_welcome_page-low_resolution.svg" alt="Picture of a smiling Mark Daniels dressed up in formal wear and sitting at an outdoor wedding reception table.">
-          </picture>
-           
-        <p class="signature">Mark Daniels</p>
-        <br>
-        <p class="swash">D</p>           
-      </div>  <!--  Closing of welcome-page-container  -->
+    <main class="main-container" id="main-about-container">
+        <div class="about-container">
+          <h2>About Me</h2>
+          <img src="./images/about_MD.jpg" alt="Getting Ready">
+          <p>Believe it or not, this exact phrase popped into my head right in the middle of an early morning jog back in August 2020 and I quickly emailed it to myself right in the  middle of the run so that I wouldn’t forget.</p>
+          <img src="./images/about_MD2.jpeg" alt="Smiling Side Profile">
+          <p>I want to see more beauty and understanding in the world.”</p>
+          <p>It was a literal flash of inspiration and I have since come to think of it as a serendipitous moment of discovering my individual WHY or personal mission statement!</p>
+          <img src="./images/MD_Timeline_2_-_Family_Portrait.jpg" alt="Family Portrait">
+          <img src="./images/MD_Timeline_3_-_Youngster_Crying.jpg" alt="Youngster Crying">
+          <img src="./images/MD_Timeline_4_-_First_Week_of_School.jpg" alt="First Week of School">
+          <img src="./images/MD_Timeline_5_-_Lego_CN_Tower.jpg" alt="Lego CN Tower">
+          
+        </div>  <!--  Closing of about-me-container  -->
     </main>
 
 
     <!-- =============== Footer Section =============== -->
     <footer class="site-footer">
-        <div class="footer-container">
+      <div class="footer-container">
 
-        <!-- Footer Navigation Content -->
-        <nav class="footer-nav">
-          <ul role="menubar" class="menubar">
-            <li><a role="menuitem" href="./about.html" aria-label="My Story Nav Button">My Story</a></li>
-            <li><a role="menuitem" href="./work.html" aria-label="My Portfolio Nav Button">My Portfolio</a></li>
-            <li><a role="menuitem" href="./blog.html" aria-label="My Writing Nav Button">My Writing</a></li>
+      <!-- Footer Navigation Content -->
+      <nav class="footer-nav">
+        <ul role="menubar" class="menubar">
+          <li class="animated-logo-background"><a role="menuitem" href="./about.html" aria-label="My Story Nav Button">My Story</a></li>
+          <li><a role="menuitem" href="./work.html" aria-label="My Portfolio Nav Button">My Portfolio</a></li>
+          <li><a role="menuitem" href="./blog.html" aria-label="My Writing Nav Button">My Writing</a></li>
 
-            <li><img src="./images/MD_welcome_page-low_resolution2.svg" alt="Marky Dee Graphic" width="50" height="50" class="animation-logo" aria-label="Logo Graphic"></li>
+          <li><img src="./images/MD_welcome_page-low_resolution2.svg" alt="Marky Dee Graphic" width="50" height="50" class="animation-logo" id="marky-dee-logo_footer" aria-label="Logo Graphic"></li>
 
-            <li><a aria-label="Create a new email to send to our company" id="email-to-Marky_Dee" role="button" href=mailto:mark@markydee.com>mark@markydee.com</a></li>
+          <li><a aria-label="Create a new email to send to our company" id="email-to-Marky_Dee" role="button" href=mailto:mark@markydee.com>mark@markydee.com</a></li>
 
-            <li><p class="Copyright"><sup>&copy;</sup> 2021 Mark Daniels</p></li>
+          <li><p class="Copyright"><sup>&copy;</sup> 2021 Mark Daniels</p></li>
 
-          </ul>
-         </nav>  
+        </ul>
+       </nav>  
 
-        </div> <!--  Closing of footer container  -->
-    </footer>
+      </div> <!--  Closing of footer container  -->
+  </footer>
 
     </div> <!--  Note: Closing DIV from top of body, "container" section  -->
 
