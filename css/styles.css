@@ -142,16 +142,21 @@ a {
     text-decoration: none;
 }
 
+body {
+	background-color: #000;
+}
+
 .menubar li {
 	padding: 5px;
 }
 
 header, footer {
 	margin: 0 auto;
-}
-
-.header-container, .footer-container {
 	background-color: #c0c0c0;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
 }
 
 h1 {
@@ -179,26 +184,7 @@ h4 {
 }
 
 html {
-	height: 100%;
-}
-
-#bg {
-	position: fixed; 
-	top: -50%; 
-	left: -50%; 
-	width: 200%; 
-	height: 200%;
-}
-
-#bg img {
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	right: 0; 
-	bottom: 0; 
-	margin: auto; 
-	min-width: 50%;
-	min-height: 50%;
+	min-width: 250px;
 }
 
 /* CSS code related to the photography credits - Start */
@@ -258,7 +244,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	background-color: #0a0a0d;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	text-align: center;
 	align-self: center;
@@ -384,6 +370,12 @@ background-color: #f7b400;
 		font-size: 144px;
 	}
 
+	.main-container {
+		width: 100%;
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+
 	.animation-logo:active {
 		transform: rotate(180deg) translateX(40rem) rotate(180deg) scale(1.1);
 		transition: 1.5s;
@@ -432,32 +424,32 @@ background-color: #f7b400;
 	}
 
 	.main-nav ul li:nth-child(1) {
-		grid-column: 3;
+		grid-column: 4;
 		grid-row: 1;
 	}
 
 	.main-nav ul li:nth-child(2) {
-		grid-column: 10;
+		grid-column: 9;
 		grid-row: 2/3;
 	}
 
 	.main-nav ul li:nth-child(3) {
-		grid-column: 11;
+		grid-column: 10;
 		grid-row: 2/3;
 	}
 
 	.main-nav ul li:nth-child(4) {
-		grid-column: 12;
+		grid-column: 11;
 		grid-row: 2/3;
 	}
 
 	.main-nav ul li:nth-child(5) {
-		grid-column: 13;
+		grid-column: 12;
 		grid-row: 2/3;
 	}
 
 	.main-nav ul li:nth-child(6) {
-		grid-column: 14;
+		grid-column: 13;
 		grid-row: 2/3;
 	}
 
@@ -469,17 +461,17 @@ background-color: #f7b400;
 	}
 
 	.footer-nav ul li:nth-child(1) {
-		grid-column: 3;
-		grid-row: 3;
-	}
-
-	.footer-nav ul li:nth-child(2) {
 		grid-column: 4;
 		grid-row: 3;
 	}
 
-	.footer-nav ul li:nth-child(3) {
+	.footer-nav ul li:nth-child(2) {
 		grid-column: 5;
+		grid-row: 3;
+	}
+
+	.footer-nav ul li:nth-child(3) {
+		grid-column: 6;
 		grid-row: 3;
 	}
 
@@ -494,34 +486,8 @@ background-color: #f7b400;
 	}
 
 	.footer-nav ul li:nth-child(6) {
-		grid-column: 14;
+		grid-column: 13;
 		grid-row: 3;
-	}
-
-	.main-container {
-		display: grid;
-		grid-template-columns: repeat(16, auto);
-		grid-template-rows: repeat(16, auto);
-	}
-
-	.welcome-container:nth-child(1) {
-		grid-column: 5/13;
-		grid-row: 9/10;
-	}
-
-	.welcome-container:nth-child(2) {
-		grid-column: 1/16;
-		grid-row: 1/12;
-	}
-
-	.welcome-container:nth-child(3) {
-		grid-column: 4/6;
-		grid-row: 7/8;
-	}
-
-	.welcome-container:nth-child(4) {
-		grid-column: 4/6;
-		grid-row: 9;
 	}
 
 	.about-container {
@@ -608,6 +574,10 @@ background-color: #f7b400;
 	.animation-logo:active {
 		transform: rotate(180deg) translateX(90rem) rotate(180deg) scale(1.1);
 		transition: 2s;
+	}
+
+	.main-container img {
+		max-width: 100%;
 	}
 
  } /* Extended Desktop media screen bracket ends here */
