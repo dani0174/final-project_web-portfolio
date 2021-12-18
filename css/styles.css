@@ -136,6 +136,7 @@ table {
 
 p {
 	font-family: "LDPacardo-Thin";
+	color: #f2f2f2;
 }
 
 a {
@@ -156,7 +157,6 @@ header, footer {
 	margin: 0 auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	
 }
 
 h1 {
@@ -179,40 +179,13 @@ h3 {
 
 h4 {
 	font-family: "TheHandnature-Swash";
-	font-size: 72px;
+	font-size: 144px;
 	color: #f7b400;
 }
 
 html {
 	min-width: 250px;
 }
-
-/* CSS code related to the photography credits - Start */
-
-.image-credit-wrapper {
-	overflow: hidden;
-	position: relative;
-}
-	
-.image-credit-wrapper .image-credit {
-	position: absolute;
-	right: 0px;
-	bottom: 4px;
-}
-
-.image-credit {
-	background: rgba(0,0,0,.7);
-	color: #ccc;
-	display: inline-block;
-	font-size: 8px;
-	font-family: helvetica;
-	font-weight: 300;
-	padding: 5px 8px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-/* CSS code related to the photography credits - End */
 
 
 /* CSS code related to the skip links styling - start */
@@ -341,6 +314,34 @@ background-color: #f7b400;
 /* CSS code related to the logo animation - end */
 
 
+/* CSS code related to the photography credits - Start */
+
+.image-credit-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+	
+.image-credit-wrapper .image-credit {
+	position: absolute;
+	right: 0px;
+	bottom: 4px;
+}
+
+.image-credit {
+	background: rgba(0,0,0,.7);
+	color: #ccc;
+	display: inline-block;
+	font-size: 8px;
+	font-family: helvetica;
+	font-weight: 300;
+	padding: 5px 8px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/* CSS code related to the photography credits - End */
+
+
 
 /* *************** Mobile Styling Ends Here *************** */
 /* ******************************************************** */
@@ -365,11 +366,11 @@ background-color: #f7b400;
 	h3 {
 		font-size: 72px;
 	}
-	
+
 	h4 {
 		font-size: 144px;
 	}
-
+	
 	.main-container {
 		width: 100%;
 		max-width: 1920px;
@@ -380,6 +381,52 @@ background-color: #f7b400;
 		transform: rotate(180deg) translateX(40rem) rotate(180deg) scale(1.1);
 		transition: 1.5s;
 	}
+
+/* Container holding the image and the text */
+.welcome-container {
+	position: relative;
+	text-align: center;
+	color: white;
+  }
+ 
+/* Middle left text */  
+.middle-left {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+  }
+ 
+/* Middle right text */  
+.middle-right {
+	position: absolute;
+	top: 20%;
+	right: 20%;
+  }
+
+/* "By Mark Daniels" text placement */
+.MD-signature {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+/* "By Mark Daniels" underline swash placement */  
+.MD-signature-swash {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+/* Centered text */
+.centered-img {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
 
 } /* Tablet media screen bracket ends here */
 
@@ -406,14 +453,59 @@ background-color: #f7b400;
 	h3 {
 		font-size: 144px;
 	}
-	
+
 	h4 {
-		font-size: 288px;
-	}	
+		font-size: 144px;
+	}
 
 	.animation-logo:active {
 		transform: rotate(180deg) translateX(65rem) rotate(180deg) scale(1.1);
 		transition: 2s;
+	}
+
+	/* Container holding the image and the text */
+	.welcome-container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+ 
+	/* Middle left text */  
+	.middle-left {
+		position: absolute;
+		top: 16%;
+		left: 38%;
+	}
+	
+	/* Middle right text */  
+	.middle-right {
+		position: absolute;
+		top: 16%;
+		right: 38%;
+	}
+
+	/* "By Mark Daniels" text placement */
+	.MD-signature {
+		position: absolute;
+		top: 16%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/* "By Mark Daniels" underline swash placement */  
+	.MD-signature-swash {
+		position: absolute;
+		top: 16%;
+		left: 48%;
+		transform: translate(-50%, -50%);
+	}
+	
+	/* Centered text */
+	.centered-img {
+		position: absolute;
+		top: 8%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	.main-nav ul {
@@ -566,6 +658,66 @@ background-color: #f7b400;
 /* ---------------------------------------------------------------------------------- */
 
 
+/* ********************************************************** */
+/* *************** Larger Desktop Styling Begins Here *************** */
+
+@media screen and (min-width: 1366px) {
+
+
+	/* Container holding the image and the text */
+	.welcome-container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+ 
+	/* Middle left text */  
+	.middle-left {
+		position: absolute;
+		top: 16%;
+		left: 33%;
+	}
+	
+	/* Middle right text */  
+	.middle-right {
+		position: absolute;
+		top: 16%;
+		right: 33%;
+	}
+
+	/* "By Mark Daniels" text placement */
+	.MD-signature {
+		position: absolute;
+		top: 16%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/* "By Mark Daniels" underline swash placement */  
+	.MD-signature-swash {
+		position: absolute;
+		top: 16%;
+		left: 48%;
+		transform: translate(-50%, -50%);
+	}
+	
+	/* Centered text */
+	.centered-img {
+		position: absolute;
+		top: 8%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+} /* Larger desktop media screen bracket ends here */
+
+/* **************** Larger Desktop Styling Ends Here **************** */
+/* ********************************************************** */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
 /* ******************************************************************** */
 /* *************** Extended Desktop Styling Begins Here *************** */
 
@@ -576,9 +728,62 @@ background-color: #f7b400;
 		transition: 2s;
 	}
 
+	.main-container {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
 	.main-container img {
 		max-width: 100%;
 	}
+
+	/* Container holding the image and the text */
+	.welcome-container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+ 
+	/* Middle left text */  
+	.middle-left {
+		position: absolute;
+		top: 16%;
+		left: 20%;
+	}
+	
+	/* Middle right text */  
+	.middle-right {
+		position: absolute;
+		top: 16%;
+		right: 20%;
+	}
+
+	/* "By Mark Daniels" text placement */
+	.MD-signature {
+		position: absolute;
+		top: 16%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	/* "By Mark Daniels" underline swash placement */  
+	.MD-signature-swash {
+		position: absolute;
+		top: 16%;
+		left: 45%;
+		transform: translate(-50%, -50%);
+	}
+	
+	/* Centered text */
+	.centered-img {
+		position: absolute;
+		top: 8%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	
 
  } /* Extended Desktop media screen bracket ends here */
 

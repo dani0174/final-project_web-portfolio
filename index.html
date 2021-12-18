@@ -27,6 +27,8 @@
           <link rel="stylesheet" type="text/css" href="./css/Marky_Dee_Fonts.css">    
       -->
     
+    <!-- Inserting my own individual Font Awesome kit's code here -->
+    <script src="https://kit.fontawesome.com/5029fbbdbc.js" crossorigin="anonymous"></script>
     
     <!-- Link to my primary CSS file here -->
     <link href="./css/styles.css" rel="stylesheet">
@@ -71,26 +73,32 @@
     <!-- =============== Main Section =============== -->
     <main class="main-container">
       <div class="welcome-container">
-        <h1>Welcome to MARKY DEE!</h1>
+
+      <h1 class="centered-img">Welcome to MARKY DEE!</h1>
         
-          <picture class="background-picture">
-              <source 
-                srcset="./images/MD_welcome_page-low_resolution.svg"
-                media="all and (max-width:600px)"
-             />
-              <source 
-                srcset="./images/MD_welcome_page-med_res.jpg"
-                media="all and (min-width:601px) and (max-width:992px)"
-              />
-              <source 
-                srcset="./images/MD_welcome_page-high_res.jpg"
-                media="all and (min-width:993px)"
-              />
-              <img src="./images/MD_welcome_page-low_resolution.svg" alt="Picture of a smiling Mark Daniels dressed up in formal wear and sitting at an outdoor wedding reception table.">
-          </picture>
-        
-        <h2>Testing 1, 2, 3</h2>
-        <h3>Testing 4, 5, 6</h3>
+      <picture class="background-picture">
+          <source 
+            srcset="./images/MD_welcome_page-low_resolution.svg"
+            media="all and (max-width:600px)"
+          />
+          <source 
+            srcset="./images/MD_welcome_page-med_res.jpg"
+            media="all and (min-width:601px) and (max-width:992px)"
+          />
+          <source 
+            srcset="./images/MD_welcome_page-high_res-cropped.jpg"
+            media="all and (min-width:993px)"
+          />
+          <img src="./images/MD_welcome_page-low_resolution.svg" alt="Picture of a smiling Mark Daniels dressed up in formal wear and sitting at an outdoor wedding reception table.">
+      </picture>
+
+      <h2 class="middle-left" id="web-design-text-hover">Web Design</h2>
+
+      <h2 class="middle-right" id="photography-text-hover">Photography</h2>
+
+      <h3 class="MD-signature" id="MD-signature-animation">Mark Daniels</h3>
+      <h4 class="MD-signature-swash" id="MD-signature-swash-animation">D</h4>
+
       </div>  <!--  Closing of welcome-page-container  -->
     </main>
 
