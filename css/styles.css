@@ -140,7 +140,11 @@ p {
 }
 
 a {
-    text-decoration: none;
+    flex: 1;
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
 }
 
 body {
@@ -155,8 +159,6 @@ header, footer {
 	margin: 0 auto;
 	background-color: #c0c0c0;
 	margin: 0 auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 h1 {
@@ -166,8 +168,8 @@ h1 {
 }
 
 h2 {
-	font-family: "LDPacardo-Regular";
-	font-size: 24px;
+	font-family: "LDPacardo-Thin";
+	font-size: 18px;
 	color: #f2f2f2;
 }
 
@@ -179,12 +181,18 @@ h3 {
 
 h4 {
 	font-family: "TheHandnature-Swash";
-	font-size: 144px;
+	font-size: 24px;
 	color: #f7b400;
 }
 
 html {
 	min-width: 250px;
+}
+
+.header-nav .current {
+	background-color: #473273;
+	color: #f2f2f2;
+	border: 1px solid;
 }
 
 
@@ -217,13 +225,14 @@ html {
 	display: flex;
 	flex-direction: column;
 	background-color: #0a0a0d;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
 	align-self: center;
 	height: 100%;
 }
 /* CSS code related to the main section sizing and styling - end */
+
 
 /* CSS code related to the footer navigation styling - start */
 
@@ -302,7 +311,7 @@ html {
   transition: 1s;
 }
 
-a:hover, button:hover {
+a:hover, a:focus, button:hover, button:focus {
 	background-color: #f2f2f2;
 }
 
@@ -312,6 +321,26 @@ background-color: #f7b400;
 }
 
 /* CSS code related to the logo animation - end */
+
+/* CSS code related to the Marky Dee Signature Swash Animation - Start */
+
+#MD-signature-swash-animation {
+	opacity: 0;
+}
+
+#MD-signature-swash-animation {
+	animation-name: swash-opacity;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	transition: easeInCubic 0.4s; 
+  	animation-fill-mode: forwards;  
+}
+
+@keyframes swash-opacity {
+	from {opacity: 0%;}
+	to {opacity: 100%;}
+  }
+/* CSS code related to the Marky Dee Signature Swash Animation - End */
 
 
 /* CSS code related to the photography credits - Start */
@@ -360,6 +389,7 @@ background-color: #f7b400;
 	}
 	
 	h2 {
+		font-family: "LDPacardo-Thin";
 		font-size: 27px;
 	}
 	
@@ -456,6 +486,10 @@ background-color: #f7b400;
 
 	h4 {
 		font-size: 144px;
+	}
+
+	header, footer {
+		padding: 10px;
 	}
 
 	.animation-logo:active {
@@ -652,66 +686,6 @@ background-color: #f7b400;
 } /* Desktop media screen bracket ends here */
 
 /* **************** Desktop Styling Ends Here **************** */
-/* ********************************************************** */
-
-
-/* ---------------------------------------------------------------------------------- */
-
-
-/* ********************************************************** */
-/* *************** Larger Desktop Styling Begins Here *************** */
-
-@media screen and (min-width: 1366px) {
-
-
-	/* Container holding the image and the text */
-	.welcome-container {
-		position: relative;
-		text-align: center;
-		color: white;
-	}
- 
-	/* Middle left text */  
-	.middle-left {
-		position: absolute;
-		top: 16%;
-		left: 33%;
-	}
-	
-	/* Middle right text */  
-	.middle-right {
-		position: absolute;
-		top: 16%;
-		right: 33%;
-	}
-
-	/* "By Mark Daniels" text placement */
-	.MD-signature {
-		position: absolute;
-		top: 16%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	/* "By Mark Daniels" underline swash placement */  
-	.MD-signature-swash {
-		position: absolute;
-		top: 16%;
-		left: 48%;
-		transform: translate(-50%, -50%);
-	}
-	
-	/* Centered text */
-	.centered-img {
-		position: absolute;
-		top: 8%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-} /* Larger desktop media screen bracket ends here */
-
-/* **************** Larger Desktop Styling Ends Here **************** */
 /* ********************************************************** */
 
 
