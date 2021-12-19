@@ -55,65 +55,64 @@ table {
 /* ============= Final Project - Web Portfolio by Mark Daniels ============= */
 /* ================================================================================== */
 
-/* Loading fonts */
+/* Marky Dee Fonts - Start */
 
 @font-face {
-	font-family: "LDPacardo-Thin-preload";
+	font-family: "LDPacardo-Thin";
 	src: url('../webFonts/LDPacardoThin/font.woff2') format('woff2'), url('../webFonts/LDPacardoThin/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "LDPacardo-Regular-preload";
+	font-family: "LDPacardo-Regular";
 	src: url('../webFonts/LDPacardoRegular/font.woff2') format('woff2'), url('../webFonts/LDPacardoRegular/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "TheHandnature-preload";
+	font-family: "TheHandnature";
 	src: url('../webFonts/TheHandnature/font.woff2') format('woff2'), url('../webFonts/TheHandnature/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "TheHandnature-Swash-preload";
+	font-family: "TheHandnature-Swash";
 	src: url('../webFonts/TheHandnatureSwash/font.woff2') format('woff2'), url('../webFonts/TheHandnatureSwash/font.woff') format('woff');
   }
 
+
 @font-face {
-	font-family: "LDColarino-Type18-preload";
+	font-family: "LDColarino-Type18";
 	src: url('../webFonts/LDColarinoType18/font.woff2') format('woff2'), url('../webFonts/LDColarinoType18/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "LDColarino-Type19-preload";
+	font-family: "LDColarino-Type19";
 	src: url('../webFonts/LDColarinoType19/font.woff2') format('woff2'), url('../webFonts/LDColarinoType19/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "LDColarino-Type27-preload";
+	font-family: "LDColarino-Type27";
 	src: url('../webFonts/LDColarinoType27/font.woff2') format('woff2'), url('../webFonts/LDColarinoType27/font.woff') format('woff');
   }
 
-
-.LDPacardoThin {
-	font-family: "LDPacardo-Thin";
-	}
-.LDPacardoRegular {
-	font-family: "LDPacardo-Regular";
-	}
-.TheHandnature {
-	font-family: "TheHandnature";
-	}
-.TheHandnatureSwash {
-	font-family: "TheHandnature-Swash";
-	}
-.LDColarinoType18 {
+/*
+@font-face {
 	font-family: "LDColarino-Type18";
-	}
-.LDColarinoType19 {
+	src: url('../fonts/Type18.otf');
+  }
+
+@font-face {
 	font-family: "LDColarino-Type19";
-	}
-.LDColarinoType27 {
+	src: url('../fonts/Type19.otf');
+  }
+
+@font-face {
 	font-family: "LDColarino-Type27";
-	}
+	src: url('../fonts/Type27.otf');
+  }
+*/
+
+
+  /* Marky Dee Fonts - End */
+
 
 /* ********************************************************* */
 /* *************** Mobile Styling Begins Here ************** */
@@ -154,6 +153,7 @@ h1 {
 h2 {
 	font-family: "LDColarino-Type27";
 	font-size: 24px;
+	color: #f2f2f2;
 }
 
 h3 {
@@ -173,7 +173,7 @@ h5 {
 	font-size: 48px;
 }
 
-.testing-colarino {
+#testing-colarino {
 	font-family: "LDColarino-Type27";
 	font-size: 24px;
 }
@@ -183,9 +183,8 @@ html {
 }
 
 .header-nav .current {
-	background-color: #473273;
-	color: #f2f2f2;
-	border: 1px solid;
+	color: #656f8c;
+	border: 1px groove;
 }
 
 
@@ -375,7 +374,7 @@ background-color: #f7b400;
 /* ********************************************************** */
 /* *************** Tablet Styling Begins Here *************** */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
 
 	h1 {
 		font-family: "LDPacardo-Regular";
@@ -465,7 +464,7 @@ background-color: #f7b400;
 /* ********************************************************** */
 /* *************** Desktop Styling Begins Here *************** */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
 
 	h1 {
 		font-size: 72px;
