@@ -12,7 +12,7 @@
     <!-- Inserting my own licensed MyFonts webkit info here:
           /**
           * @license
-          * MyFonts Webfont Build ID 689990
+          * MyFonts Webfont Build ID 106247
           *
           * The fonts listed in this notice are subject to the End User License
           * Agreement(s) entered into by the website owner. All other parties are
@@ -24,7 +24,7 @@
           * http://www.linotype.com
           *
           */
-          <link rel="stylesheet" type="text/css" href="./css/Marky_Dee_Fonts.css">    
+          <link rel="stylesheet" type="text/css" href="./css/Marky_Dee_Fonts-updated.css">    
       -->
     
     <!-- Inserting my own individual Font Awesome kit's code here -->
@@ -44,9 +44,10 @@
     <div class="wrap">
 
     <ul class="skip-links">
-      <li><a href="#header-nav">Skip to Navigation</a></li>
-      <li><a href="#main-content">Skip to Main Content</a></li>
-      <li><a href="#email-to-Marky_Dee">Skip to Email Marky Dee Button</a></li>
+      <li><a href="#main-nav">Skip to Main Navigation</a></li>
+      <li><a href="#main-content">Skip to Welcome Page Content</a></li>
+      <li><a href="#email-to-Marky_Dee">Skip to Send Email Button</a></li>
+      <li><a href="#language-toggle">Skip to French Language Toggle</a></li>
     </ul>
 
     <div class="container" id="top">  <!--  Note: Start of "container" section  -->
@@ -55,7 +56,7 @@
     <header class="site-header">
       <div class="header-container">
         <!-- Top Navigation Content -->
-      <div class="main-nav">  
+      <div class="main-nav" id="main-nav">  
         <nav class="header-nav">
           <ul role="menubar" class="menubar">
             <li class="animated-logo-background"><img role="menuitem" src="./images/MD_welcome_page-low_resolution2.svg" alt="Marky Dee Graphic" width="70" height="70" class="animation-logo" id="marky-dee-logo_header" aria-label="Logo Graphic"></li>
@@ -71,7 +72,7 @@
     </header> <!-- End of Header Section -->
 
     <!-- =============== Main Section =============== -->
-    <main class="main-container">
+    <main class="main-container" id="main-content">
       <div class="welcome-container">
       
       <h1 class="centered-img">Welcome to MARKY DEE!</h1>
@@ -121,6 +122,8 @@
 
             <li><a aria-label="Create a new email to send to our company" id="email-to-Marky_Dee" role="button" href=mailto:mark@markydee.com>mark@markydee.com</a></li>
 
+            <li><a class="french-toggle" href="#top" id="language-toggle">FR</a></li>
+            
             <li><p class="Copyright"><sup>&copy;</sup> 2021 Mark Daniels</p></li>
 
           </ul>

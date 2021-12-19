@@ -1,0 +1,76 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4252493, 2021-12-19T06:45:57-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: LDPacardo-Thin by Luxfont
+ * URL: https://www.myfonts.com/fonts/luxfont/pacardo/thin/
+ * Copyright: Copyright © 2020 by Luxfont. All rights reserved.
+ * 
+ * Webfont: LDPacardo-Regular by Luxfont
+ * URL: https://www.myfonts.com/fonts/luxfont/pacardo/regular/
+ * Copyright: Copyright © 2020 by Luxfont. All rights reserved.
+ * 
+ * Webfont: TheHandnature by Almarkha Type
+ * URL: https://www.myfonts.com/fonts/almarkha-type/the-handnature/regular/
+ * Copyright: The Handnature © Almarkhatype 2020 All Rights Reserved
+ * 
+ * Webfont: TheHandnature-Swash by Almarkha Type
+ * URL: https://www.myfonts.com/fonts/almarkha-type/the-handnature/swash/
+ * Copyright: The Handnature Swash © Almarkhatype 2020 All Rights Reserved
+ * 
+ * Webfont: LDColarino-Type18 by Luxfont
+ * URL: https://www.myfonts.com/fonts/luxfont/colarino/type-18/
+ * Copyright: Copyright © 2021 by Luxfont. All rights reserved.
+ * 
+ * Webfont: LDColarino-Type19 by Luxfont
+ * URL: https://www.myfonts.com/fonts/luxfont/colarino/type-19/
+ * Copyright: Copyright © 2021 by Luxfont. All rights reserved.
+ * 
+ * Webfont: LDColarino-Type27 by Luxfont
+ * URL: https://www.myfonts.com/fonts/luxfont/colarino/type-27/
+ * Copyright: Copyright © 2021 by Luxfont. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/40e34d");
+  
+@font-face {
+  font-family: "LDPacardo-Regular";
+  src: url('webFonts/LDPacardoRegular/font.woff2') format('woff2'), url('webFonts/LDPacardoRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "LDPacardo-Thin";
+  src: url('webFonts/LDPacardoThin/font.woff2') format('woff2'), url('webFonts/LDPacardoThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "LDColarino-Type27";
+  src: url('webFonts/LDColarinoType27/font.woff2') format('woff2'), url('webFonts/LDColarinoType27/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TheHandnature-Swash";
+  src: url('webFonts/TheHandnatureSwash/font.woff2') format('woff2'), url('webFonts/TheHandnatureSwash/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TheHandnature";
+  src: url('webFonts/TheHandnature/font.woff2') format('woff2'), url('webFonts/TheHandnature/font.woff') format('woff');
+}
+@font-face {
+  font-family: "LDColarino-Type19";
+  src: url('webFonts/LDColarinoType19/font.woff2') format('woff2'), url('webFonts/LDColarinoType19/font.woff') format('woff');
+}
+@font-face {
+  font-family: "LDColarino-Type18";
+  src: url('webFonts/LDColarinoType18/font.woff2') format('woff2'), url('webFonts/LDColarinoType18/font.woff') format('woff');
+}
+

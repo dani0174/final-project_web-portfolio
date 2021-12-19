@@ -58,67 +58,46 @@ table {
 /* Loading fonts */
 
 @font-face {
-	font-family: "LDPacardo-Thin";
+	font-family: "LDPacardo-Thin-preload";
 	src: url('../webFonts/LDPacardoThin/font.woff2') format('woff2'), url('../webFonts/LDPacardoThin/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "LDPacardo-Bold";
-	src: url('../webFonts/LDPacardoBold/font.woff2') format('woff2'), url('../webFonts/LDPacardoBold/font.woff') format('woff');
-  }
-
-@font-face {
-	font-family: "TheHandnature-Swash";
-	src: url('../webFonts/TheHandnatureSwash/font.woff2') format('woff2'), url('../webFonts/TheHandnatureSwash/font.woff') format('woff');
-  }
-
-@font-face {
-	font-family: "LDPacardo-BoldItalic";
-	src: url('../webFonts/LDPacardoBoldItalic/font.woff2') format('woff2'), url('../webFonts/LDPacardoBoldItalic/font.woff') format('woff');
-  }
-
-@font-face {
-	font-family: "TheHandnature";
-	src: url('../webFonts/TheHandnature/font.woff2') format('woff2'), url('../webFonts/TheHandnature/font.woff') format('woff');
-  }
-
-@font-face {
-	font-family: "LDPacardo-Regular";
+	font-family: "LDPacardo-Regular-preload";
 	src: url('../webFonts/LDPacardoRegular/font.woff2') format('woff2'), url('../webFonts/LDPacardoRegular/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "LDPacardo-ThinItalic";
-	src: url('../webFonts/LDPacardoThinItalic/font.woff2') format('woff2'), url('../webFonts/LDPacardoThinItalic/font.woff') format('woff');
+	font-family: "TheHandnature-preload";
+	src: url('../webFonts/TheHandnature/font.woff2') format('woff2'), url('../webFonts/TheHandnature/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "TTTrailersVariable";
-	src: url('../webFonts/TTTrailersVariable/font.woff2') format('woff2'), url('../webFonts/TTTrailersVariable/font.woff') format('woff');
+	font-family: "TheHandnature-Swash-preload";
+	src: url('../webFonts/TheHandnatureSwash/font.woff2') format('woff2'), url('../webFonts/TheHandnatureSwash/font.woff') format('woff');
   }
 
 @font-face {
-	font-family: "LDPacardo-Italic";
-	src: url('../webFonts/LDPacardoItalic/font.woff2') format('woff2'), url('../webFonts/LDPacardoItalic/font.woff') format('woff');
+	font-family: "LDColarino-Type18-preload";
+	src: url('../webFonts/LDColarinoType18/font.woff2') format('woff2'), url('../webFonts/LDColarinoType18/font.woff') format('woff');
   }
+
+@font-face {
+	font-family: "LDColarino-Type19-preload";
+	src: url('../webFonts/LDColarinoType19/font.woff2') format('woff2'), url('../webFonts/LDColarinoType19/font.woff') format('woff');
+  }
+
+@font-face {
+	font-family: "LDColarino-Type27-preload";
+	src: url('../webFonts/LDColarinoType27/font.woff2') format('woff2'), url('../webFonts/LDColarinoType27/font.woff') format('woff');
+  }
+
 
 .LDPacardoThin {
 	font-family: "LDPacardo-Thin";
 	}
-.LDPacardoThinItalic {
-	font-family: "LDPacardo-ThinItalic";
-	}
 .LDPacardoRegular {
 	font-family: "LDPacardo-Regular";
-	}
-.LDPacardoItalic {
-	font-family: "LDPacardo-Italic";
-	}
-.LDPacardoBold {
-	font-family: "LDPacardo-Bold";
-	}
-.LDPacardoBoldItalic {
-	font-family: "LDPacardo-BoldItalic";
 	}
 .TheHandnature {
 	font-family: "TheHandnature";
@@ -126,10 +105,15 @@ table {
 .TheHandnatureSwash {
 	font-family: "TheHandnature-Swash";
 	}
-.TTTrailersVariable {
-	font-family: "TTTrailersVariable";
+.LDColarinoType18 {
+	font-family: "LDColarino-Type18";
 	}
-
+.LDColarinoType19 {
+	font-family: "LDColarino-Type19";
+	}
+.LDColarinoType27 {
+	font-family: "LDColarino-Type27";
+	}
 
 /* ********************************************************* */
 /* *************** Mobile Styling Begins Here ************** */
@@ -162,15 +146,14 @@ header, footer {
 }
 
 h1 {
-	font-family: "LDPacardo-Regular";
-	font-size: 27px;
+	font-family: "LDColarino-Type18";
+	font-size: 28px;
 	color: #f2f2f2;
 }
 
 h2 {
-	font-family: "LDPacardo-Thin";
-	font-size: 18px;
-	color: #f2f2f2;
+	font-family: "LDColarino-Type27";
+	font-size: 24px;
 }
 
 h3 {
@@ -183,6 +166,16 @@ h4 {
 	font-family: "TheHandnature-Swash";
 	font-size: 24px;
 	color: #f7b400;
+}
+
+h5 {
+	font-family: "LDColarino-Type18";
+	font-size: 48px;
+}
+
+.testing-colarino {
+	font-family: "LDColarino-Type27";
+	font-size: 24px;
 }
 
 html {
@@ -207,8 +200,8 @@ html {
 .skip-links a{
 	position: absolute;
 	top: -3em;
-	background-color: black;
-	color:white;
+	background-color: #271540;
+	color: black;
 	padding: .5em 1em;
 	font-weight: bold;
 }
@@ -385,12 +378,14 @@ background-color: #f7b400;
 @media screen and (min-width: 600px) {
 
 	h1 {
+		font-family: "LDPacardo-Regular";
+		color: #f2f2f2;
 		font-size: 36px;
 	}
 	
 	h2 {
-		font-family: "LDPacardo-Thin";
-		font-size: 27px;
+		font-family: "LDColarino-Type18";
+		font-size: 28px;
 	}
 	
 	h3 {
@@ -477,6 +472,7 @@ background-color: #f7b400;
 	}
 	
 	h2 {
+		font-family: "LDColarino-Type27";
 		font-size: 44px;
 	}
 	
@@ -508,14 +504,14 @@ background-color: #f7b400;
 	.middle-left {
 		position: absolute;
 		top: 16%;
-		left: 38%;
+		left: 37.5%;
 	}
 	
 	/* Middle right text */  
 	.middle-right {
 		position: absolute;
 		top: 16%;
-		right: 38%;
+		right: 37.5%;
 	}
 
 	/* "By Mark Daniels" text placement */
@@ -612,6 +608,11 @@ background-color: #f7b400;
 	}
 
 	.footer-nav ul li:nth-child(6) {
+		grid-column: 12;
+		grid-row: 3;
+	}
+
+	.footer-nav ul li:nth-child(7) {
 		grid-column: 13;
 		grid-row: 3;
 	}
@@ -697,6 +698,23 @@ background-color: #f7b400;
 
 @media screen and (min-width: 1920px) {
 
+	h1 {
+		font-size: 72px;
+	}
+	
+	h2 {
+		font-family: "LDColarino-Type18";
+		font-size: 44px;
+	}
+	
+	h3 {
+		font-size: 108px;
+	}
+
+	h4 {
+		font-size: 108px;
+	}
+
 	.animation-logo:active {
 		transform: rotate(180deg) translateX(90rem) rotate(180deg) scale(1.1);
 		transition: 2s;
@@ -723,20 +741,20 @@ background-color: #f7b400;
 	.middle-left {
 		position: absolute;
 		top: 16%;
-		left: 20%;
+		left: 25%;
 	}
 	
 	/* Middle right text */  
 	.middle-right {
 		position: absolute;
 		top: 16%;
-		right: 20%;
+		right: 25%;
 	}
 
 	/* "By Mark Daniels" text placement */
 	.MD-signature {
 		position: absolute;
-		top: 16%;
+		top: 18%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
@@ -744,8 +762,8 @@ background-color: #f7b400;
 	/* "By Mark Daniels" underline swash placement */  
 	.MD-signature-swash {
 		position: absolute;
-		top: 16%;
-		left: 45%;
+		top: 18%;
+		left: 47%;
 		transform: translate(-50%, -50%);
 	}
 	
