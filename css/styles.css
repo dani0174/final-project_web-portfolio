@@ -335,6 +335,126 @@ background-color: #f7b400;
 /* CSS code related to the Marky Dee Signature Swash Animation - End */
 
 
+/* CSS code related to the Contact Page container - Start */
+
+/* CSS code related to contact_us.html - start */
+
+.contact-us-container form input,
+form textarea {
+  	display: block;
+  	width: 90%;
+  	margin-bottom: 1rem;
+  	padding: .5rem 1rem;
+  	color: #FFF;
+	font-family: 'IBM Plex Sans';
+}
+
+.contact-us-container form textarea {
+  	min-height: 100px;
+  	max-height: 100px;
+  	height: 100px;
+  	resize: none;
+  	color: #FFF;
+	font-family: 'IBM Plex Sans';
+}
+
+.contact-us-container form button {
+  	background: none;
+  	background-color: #473273;
+  	border: 3px solid black;
+  	padding: 1rem;
+  	text-transform: uppercase;
+  	color: #FFF;
+	font-family: 'IBM Plex Sans';
+}
+
+.contact-us-container form {
+	border-style: solid;
+  	border-width: 1px;
+  	border-color: black;
+	margin: 5px;
+	padding: 10px;
+	padding-top: 15px;
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+ }
+
+ .form-flexbox{
+	display: flex;
+	justify-content: space-evenly;
+  }
+  
+  .owner {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+  }
+  
+  .owner h2 {
+	align-self: flex-start;
+  }
+  
+  .google-maps-element {
+	padding-left: 5%;
+  }
+  
+  .owner-contact-items a {
+	color: #FFF;
+  }
+
+  .main-content-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+	line-height: 150%;
+  }
+  
+  .main-content-contact h2, p {
+	padding: 5px;
+	align-self: center;
+	justify-self: center;
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+	line-height: 150%;
+  }
+
+
+@media screen and (min-width: 835px) {
+  .grid-container {
+    display: grid;
+    width: 100%;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+  }
+}
+
+  .grid-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem;
+	background-color:#656f8c;
+  }
+
+  .contact-us-container address {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.contact-section {
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+	line-height: 150%;
+}
+/* CSS code related to contact_us.html - end */
+
+/* CSS code related to the Contact Page container - End */
+
+
 /* CSS code related to the photography credits - Start */
 
 .image-credit-wrapper {
@@ -361,6 +481,59 @@ background-color: #f7b400;
 	right: 0;
 }
 /* CSS code related to the photography credits - End */
+
+
+/* CSS code related to the About Page Containers - Start */
+
+.about-intro-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* =============== My Story Timeline - Mobile =============== */
+
+.my-timeline-container  {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	justify-items: center;
+	gap: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1;
+	grid-row: 1;
+	justify-self: left;
+}
+
+.YoungsterCrying {
+	grid-column: 1;
+	grid-row: 2;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;	
+}
+
+.FirstWeekSchool {
+	grid-column: 1;
+	grid-row: 3;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;
+}
+
+.LegoCNTower {
+	grid-column: 1;
+	grid-row: 4;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;	
+}
+
+
+
+/* CSS code related to the About Page Containers - End */
 
 
 
@@ -616,72 +789,6 @@ background-color: #f7b400;
 		grid-row: 3;
 	}
 
-	.about-container {
-		display: grid;
-		grid-template-columns: repeat(16, 111px);
-		grid-template-rows: repeat(16, 40px);
-		
-	}
-
-	.about-container:nth-child(1) {
-		grid-column: 5/13;
-		grid-row: 5/6;
-	}
-
-	.about-container:nth-child(2) {
-		grid-column: 1/2;
-		grid-row: 5/9;
-	}
-
-	.about-container:nth-child(3) {
-		grid-column: 4/6;
-		grid-row: 7/8;
-	}
-
-	.about-container:nth-child(4) {
-		grid-column: 4/6;
-		grid-row: 9;
-	}
-
-	.about-container:nth-child(5) {
-		grid-column: 4/6;
-		grid-row: 9;
-	}
-
-	.about-container:nth-child(6) {
-		grid-column: 4/6;
-		grid-row: 9;
-	}
-
-	.about-container:nth-child(7) {
-		grid-column: 4/6;
-		grid-row: 9;
-	}
-
-	.about-container:nth-child(8) {
-		grid-column: 4/6;
-		grid-row: 9;
-	}
-
-	.about-container:nth-child(9) {
-		grid-column: 3/5;
-		grid-row: 9;
-	}
-
-	.about-container:nth-child(10) {
-		grid-column: 6/8;
-		grid-row: 9;
-	}
-
-	.about-container:nth-child(11) {
-		grid-column: 9/11;
-		grid-row: 9;
-	}
-
-	.about-container:nth-child(12) {
-		grid-column: 12/15;
-		grid-row: 12/span 4;
-	}
 
 } /* Desktop media screen bracket ends here */
 

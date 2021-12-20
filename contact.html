@@ -65,15 +65,64 @@
     </header> <!-- End of Header Section -->
 
     <!-- =============== Main Section =============== -->
-    <main class="main-container" id="main-content">
-      <div class="contact-page-container">
-        <h2>Contact Me</h2>
-        
-  
-        
-      </div>  <!--  Closing of contact-page-container  -->
-    </main>
+    <main class="main-container" id="contact-main-container">
+      
+      <div class="contact-us-container">
+         
+        <div class="grid-container">
 
+          <!-- Meet the Owner Content -->  
+          <section class="owner">
+
+            <h2 id="owner">Meet the Owner</h2>
+            <ul role="group" class="owner-contact-items" itemscope itemtype="https://schema.org/Person">
+              <li itemprop="name">Janelle Doe</li>
+              <li itemprop="jobTitle"><abbr title="Chief Executive Officer" role="definition">CEO</abbr></li>
+              <li itemprop="email"><a aria-label="Create a new email to the owner" role="button" href=mailto:janelle.doe@flavoursicecream.ca>janelle.doe@flavoursicecream.ca</a></li>
+              <li itemprop="telephone">613-586-1903</li>
+            </ul>
+            <br>
+
+            <h2>Location</h2>
+            <!-- Location Content --> 
+            <address id="location2">
+              <ul role="group" class="owner-address-items" itemscope itemtype="https://schema.org/PostalAddress">
+                <li itemprop="name">Modern Family Flavours Ice Cream</li>
+                <li itemprop="streetAddress">42 Hinton Avenue</li>
+                <li itemprop="addressLocality">Ottawa, Ontario</li>
+                <li itemprop="postalCode">K1P 0T5</li>
+              </ul>
+              <br>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.390407209324!2d-75.7341999835976!3d45.401466379100334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce043d8adbb12d%3A0xf9742fda1755c69a!2s42%20Hinton%20Ave%20N%2C%20Ottawa%2C%20ON%20K1Y%200Z6!5e0!3m2!1sen!2sca!4v1637026276189!5m2!1sen!2sca" width="400" height="275" style="border:1px;" allowfullscreen="" loading="lazy"></iframe>
+            </address>
+            <br>
+          </section>
+          <!-- Contact Us Content -->
+          <section class="contact-section" id="contact-us">
+
+            <h2>Contact Us</h2>
+            <form action="thanks.html">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" placeholder="First Name">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" placeholder="Last Name">
+              <label for="email">Email</label>
+              <input type="email" id="email2" placeholder="Email">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Subject">
+              <label for="message">Your Message</label>
+              <textarea placeholder="Your Message" id="message"></textarea>
+              <div class="form-flexbox">
+              <button type="submit" value="Submit" aria-label="Submit your completed contact us form.">Submit</button>
+              <button type="reset" aria-label="Reset all of the form fields." value="Reset">Reset</button>
+              </div>
+            </form>
+          </section>
+        </div>
+            
+      </div>  <!--  Closing of contact-us-container container  -->
+      
+    </main>
 
     <!-- =============== Footer Section =============== -->
     <footer class="site-footer">
