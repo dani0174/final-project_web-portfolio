@@ -63,6 +63,11 @@ table {
   }
 
 @font-face {
+	font-family: "LDPacardo-Thin-Italic";
+	src: url('../webFonts/LDPacardoThinItalic/font.woff2') format('woff2'), url('../webFonts/LDPacardoThinItalic/font.woff') format('woff');
+  }
+
+@font-face {
 	font-family: "LDPacardo-Regular";
 	src: url('../webFonts/LDPacardoRegular/font.woff2') format('woff2'), url('../webFonts/LDPacardoRegular/font.woff') format('woff');
   }
@@ -107,21 +112,26 @@ table {
   }
 
 @font-face {
+	font-family: "LDColarino-Type21";
+	src: url('../fonts/Type21.otf');
+  }
+
+@font-face {
 	font-family: "LDColarino-Type27";
 	src: url('../fonts/Type27.otf');
   }
 
-
-
   /* Marky Dee Fonts - End */
 
 
+  
 /* ********************************************************* */
 /* *************** Mobile Styling Begins Here ************** */
 
 p {
 	font-family: "LDPacardo-Thin";
 	color: #f2f2f2;
+	font-size: 16px;
 }
 
 a {
@@ -148,7 +158,7 @@ header, footer {
 
 h1 {
 	font-family: "LDPacardo-Regular";
-	font-size: 28px;
+	font-size: 32px;
 	color: #f2f2f2;
 }
 
@@ -171,8 +181,29 @@ h4 {
 }
 
 h5 {
-	font-family: "LDColarino-Type18";
-	font-size: 48px;
+	font-family: "LDColarino-Type21";
+	font-size: 28px;
+	color: #f2f2f2;
+}
+
+h6 {
+	font-family: "LDColarino-Type27";
+	font-size: 28px;
+	color: #473273;
+}
+
+#MD-signature {
+	font-size: 72px;
+}
+
+#MD-signature-swash {
+	font-size: 72px;
+}
+
+blockquote {
+	color: #f7b400;
+	font-family: "LDPacardo-Thin-Italic";
+	font-size: 28px;
 }
 
 #testing-colarino {
@@ -188,6 +219,12 @@ html {
 	color: #656f8c;
 }
 
+.blog-page-container {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 /* CSS code related to the skip links styling - start */
 
@@ -344,36 +381,36 @@ border-radius: 5px;
 
 /* CSS code related to contact_us.html - start */
 
-.contact-us-container form input,
+.contact-container form input,
 form textarea {
   	display: block;
   	width: 90%;
   	margin-bottom: 1rem;
   	padding: .5rem 1rem;
-  	color: #FFF;
-	font-family: 'IBM Plex Sans';
+  	color: #271540;
+	font-family: "LDPacardo-Thin";
 }
 
-.contact-us-container form textarea {
-  	min-height: 100px;
-  	max-height: 100px;
-  	height: 100px;
+.contact-container form textarea {
+  	height: 80px;
   	resize: none;
-  	color: #FFF;
-	font-family: 'IBM Plex Sans';
+  	color: #271540;
+	font-family: "LDPacardo-Thin";
 }
 
-.contact-us-container form button {
+.contact-container form button {
   	background: none;
   	background-color: #473273;
   	border: 3px solid black;
   	padding: 1rem;
   	text-transform: uppercase;
   	color: #FFF;
-	font-family: 'IBM Plex Sans';
+	font-family: "LDPacardo-Thin";
+	border-radius: 5px;
+	font-size: 14px;
 }
 
-.contact-us-container form {
+.contact-container form {
 	border-style: solid;
   	border-width: 1px;
   	border-color: black;
@@ -381,51 +418,93 @@ form textarea {
 	padding: 10px;
 	padding-top: 15px;
 	color: #FFF;
-	font-family: 'IBM Plex Sans';
+	font-family: "LDPacardo-Thin";
  }
 
- .form-flexbox{
+.form-flexbox{
 	display: flex;
 	justify-content: space-evenly;
   }
   
-  .owner {
+.owner {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-
+	color: #f2f2f2;
+	font-family: "LDPacardo-Thin";
+	justify-content: space-between;
   }
+
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	font-family: "LDPacardo-Thin";
+	line-height: 150%;
+	justify-content: space-between;
+}
   
-  .owner h2 {
+.owner h2 {
 	align-self: flex-start;
   }
   
-  .google-maps-element {
+.google-maps-element {
 	padding-left: 5%;
   }
   
-  .owner-contact-items a {
-	color: #FFF;
+.owner-contact-items {
+	font-family: "LDPacardo-Thin";
+	font-size: 18px;
   }
 
-  .main-content-contact {
+.owner-contact-items a {
+	color: #271540;
+	font-family: "LDPacardo-Thin";
+	font-size: 18px;
+  }
+
+.owner-contact-items li {
+	padding-top: 5px;
+  	padding-bottom: 5px;
+  }
+
+.main-content-contact {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	color: #FFF;
-	font-family: 'IBM Plex Sans';
 	line-height: 150%;
   }
   
-  .main-content-contact h2, p {
+.main-content-contact h2, p {
 	padding: 5px;
 	align-self: center;
 	justify-self: center;
-	color: #FFF;
-	font-family: 'IBM Plex Sans';
 	line-height: 150%;
   }
 
+.contact-container address {
+	font-size: 18px;
+	line-height: 150%;
+  }
+
+.contact-section button:hover, button:focus {
+	background-color: #f2f2f2;
+	color: #473273;
+	border-radius: 5px;
+}
+
+.contact-section button:active {
+color: #271540;
+background-color: #f7b400;
+border-radius: 5px;
+}
+
+.grid-container {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 1rem;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color:#656f8c;
+	}
 
 @media screen and (min-width: 835px) {
   .grid-container {
@@ -438,23 +517,6 @@ form textarea {
   }
 }
 
-  .grid-container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 1rem;
-	background-color:#656f8c;
-  }
-
-  .contact-us-container address {
-	font-size: 14px;
-	line-height: 150%;
-}
-
-.contact-section {
-	color: #FFF;
-	font-family: 'IBM Plex Sans';
-	line-height: 150%;
-}
 /* CSS code related to contact_us.html - end */
 
 /* CSS code related to the Contact Page container - End */
@@ -498,6 +560,11 @@ form textarea {
 
 /* =============== My Story Timeline - Mobile =============== */
 
+.my-timeline-container img {
+	width: 100%;
+	height: 100%;
+}
+
 .my-timeline-container  {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -536,9 +603,54 @@ form textarea {
 	padding-bottom: 16px;	
 }
 
-
-
 /* CSS code related to the About Page Containers - End */
+
+/* =============== My Work Portfolio Samples - Mobile =============== */
+
+.my-work-samples-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.my-work-samples-container  {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	justify-items: center;
+	gap: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1;
+	grid-row: 1;
+	justify-self: left;
+}
+
+.YoungsterCrying {
+	grid-column: 1;
+	grid-row: 2;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;	
+}
+
+.FirstWeekSchool {
+	grid-column: 1;
+	grid-row: 3;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;
+}
+
+.LegoCNTower {
+	grid-column: 1;
+	grid-row: 4;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;	
+}
+
+/* CSS code related to My Work Samples Containers - End */
 
 
 
@@ -631,6 +743,92 @@ form textarea {
 	transform: translate(-50%, -50%);
   }
 
+/* =============== My Story Timeline - Tablet =============== */
+
+.my-timeline-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.my-timeline-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	justify-items: center;
+	gap: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1;
+	grid-row: 1;
+	align-self:flex-start;
+}
+
+.YoungsterCrying {
+	grid-column: 2;
+	grid-row: 1;
+	align-self:stretch;
+}
+
+.FirstWeekSchool {
+	grid-column: 1;
+	grid-row: 2;
+	align-self: stretch;
+}
+
+.LegoCNTower {
+	grid-column: 2;
+	grid-row: 2;
+	align-self: stretch;
+}
+
+/* CSS code related to the About Page Containers - End */
+
+/* =============== My Work Portfolio Samples - Tablet =============== */
+
+.my-work-samples-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.my-work-samples-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	justify-items: center;
+	gap: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1;
+	grid-row: 1;
+	align-self:flex-start;
+}
+
+.YoungsterCrying {
+	grid-column: 2;
+	grid-row: 1;
+	align-self:stretch;
+}
+
+.FirstWeekSchool {
+	grid-column: 1;
+	grid-row: 2;
+	align-self: stretch;
+}
+
+.LegoCNTower {
+	grid-column: 2;
+	grid-row: 2;
+	align-self: stretch;
+}
+
+/* CSS code related to My Work Samples Containers - End */
+
 
 } /* Tablet media screen bracket ends here */
 
@@ -646,6 +844,12 @@ form textarea {
 
 @media screen and (min-width: 993px) {
 
+	p {
+		font-family: "LDPacardo-Thin";
+		color: #f2f2f2;
+		font-size: 20px;
+	}
+	
 	h1 {
 		font-size: 72px;
 	}
@@ -661,6 +865,32 @@ form textarea {
 
 	h4 {
 		font-size: 144px;
+	}
+
+	h5 {
+		font-family: "LDColarino-Type21";
+		font-size: 28px;
+		color: #f2f2f2;
+	}
+	
+	h6 {
+		font-family: "LDColarino-Type27";
+		font-size: 36px;
+		color: #473273;
+	}
+	
+	#MD-signature {
+		font-size: 72px;
+	}
+	
+	#MD-signature-swash {
+		font-size: 72px;
+	}
+
+	blockquote {
+		color: #f7b400;
+		font-family: "LDPacardo-Thin-Italic";
+		font-size: 36px;
 	}
 
 	header, footer {
@@ -757,22 +987,22 @@ form textarea {
 	.footer-nav ul {
 		display: grid;
 		grid-template-columns: repeat(16, auto);
-		grid-template-rows: repeat(4, 30px);
+		grid-template-rows: repeat(5, 30px);
 		column-gap: 12px;
 	}
 
 	.footer-nav ul li:nth-child(1) {
-		grid-column: 4;
+		grid-column: 2;
 		grid-row: 3;
 	}
 
 	.footer-nav ul li:nth-child(2) {
-		grid-column: 5;
+		grid-column: 3;
 		grid-row: 3;
 	}
 
 	.footer-nav ul li:nth-child(3) {
-		grid-column: 6;
+		grid-column: 4;
 		grid-row: 3;
 	}
 
@@ -787,12 +1017,12 @@ form textarea {
 	}
 
 	.footer-nav ul li:nth-child(6) {
-		grid-column: 12;
+		grid-column: 11;
 		grid-row: 3;
 	}
 
 	.footer-nav ul li:nth-child(7) {
-		grid-column: 13;
+		grid-column: 12 / span 4;
 		grid-row: 3;
 	}
 
@@ -801,44 +1031,90 @@ form textarea {
 
 .about-intro-container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 /* =============== My Story Timeline - Desktop =============== */
 
+.my-timeline-container img {
+	width: 100%;
+	height: 100%;
+}
+
 .my-timeline-container {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(3, auto);
 	justify-items: center;
 	gap: 1em;
 }
 
 .FamilyPortrait {
-	grid-column: 1 / span 2;
-	grid-row: 1 / 1;
+	grid-column: 1;
+	grid-row: 1;
 	align-self:flex-start;
 }
 
 .YoungsterCrying {
-	grid-column: 1 / span 3;
-	grid-row: 2 / 2;
-	align-self:stretch;
+	grid-column: 2;
+	grid-row: 1;
+	align-self: stretch;
 }
 
 .FirstWeekSchool {
-	grid-column: 4 / span 3;
-	grid-row: 2 / 2;
+	grid-column: 3;
+	grid-row: 1;
 	align-self: stretch;
 }
 
 .LegoCNTower {
-	grid-column: 1 / span 2;
-	grid-row: 3 / 3;
+	grid-column: 4;
+	grid-row: 1;
 	align-self: stretch;
 }
 
 /* CSS code related to the About Page Containers - End */
+
+/* =============== My Work Portfolio Samples - Desktop =============== */
+
+.my-work-samples-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.my-work-samples-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, auto);
+	justify-items: center;
+	gap: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1;
+	grid-row: 1;
+	align-self:flex-start;
+}
+
+.YoungsterCrying {
+	grid-column: 2;
+	grid-row: 1;
+	align-self: stretch;
+}
+
+.FirstWeekSchool {
+	grid-column: 3;
+	grid-row: 1;
+	align-self: stretch;
+}
+
+.LegoCNTower {
+	grid-column: 4;
+	grid-row: 1;
+	align-self: stretch;
+}
+
+/* CSS code related to My Work Portfolio Samples Containers - End */
 
 
 
@@ -882,7 +1158,7 @@ form textarea {
 		width: 100%;
 		max-width: 100%;
 		margin: 0 auto;
-		padding-top: 20px;
+		padding-top: 0px;
 		padding-bottom: 0px;
 	}
 
@@ -935,7 +1211,87 @@ form textarea {
 		transform: translate(-50%, -50%);
 	}
 
-	
+	/* =============== My Story Timeline - Extended Desktop =============== */
+
+	.my-timeline-container img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.my-timeline-container {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(3, auto);
+		justify-items: center;
+		gap: 1em;
+	}
+
+	.FamilyPortrait {
+		grid-column: 1;
+		grid-row: 1;
+		align-self:flex-start;
+	}
+
+	.YoungsterCrying {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: stretch;
+	}
+
+	.FirstWeekSchool {
+		grid-column: 3;
+		grid-row: 1;
+		align-self: stretch;
+	}
+
+	.LegoCNTower {
+		grid-column: 4;
+		grid-row: 1;
+		align-self: stretch;
+	}
+
+	/* CSS code related to the About Page Containers - End */
+
+	/* =============== My Work Portfolio Samples - Extended Desktop =============== */
+
+	.my-work-samples-container img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.my-work-samples-container {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(3, auto);
+		justify-items: center;
+		gap: 1em;
+	}
+
+	.FamilyPortrait {
+		grid-column: 1;
+		grid-row: 1;
+		align-self:flex-start;
+	}
+
+	.YoungsterCrying {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: stretch;
+	}
+
+	.FirstWeekSchool {
+		grid-column: 3;
+		grid-row: 1;
+		align-self: stretch;
+	}
+
+	.LegoCNTower {
+		grid-column: 4;
+		grid-row: 1;
+		align-self: stretch;
+	}
+
+	/* CSS code related to My Work Samples Containers - End */
 
  } /* Extended Desktop media screen bracket ends here */
 
