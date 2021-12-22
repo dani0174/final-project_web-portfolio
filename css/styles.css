@@ -605,6 +605,53 @@ border-radius: 5px;
 
 /* CSS code related to the About Page Containers - End */
 
+/* =============== My Services - Mobile =============== */
+
+.my-services-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.my-services-container  {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	justify-items: center;
+	gap: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1;
+	grid-row: 1;
+	justify-self: left;
+}
+
+.YoungsterCrying {
+	grid-column: 1;
+	grid-row: 2;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;	
+}
+
+.FirstWeekSchool {
+	grid-column: 1;
+	grid-row: 3;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;
+}
+
+.LegoCNTower {
+	grid-column: 1;
+	grid-row: 4;
+	align-self: center;
+	background-color: #ffe6ac;
+	padding-bottom: 16px;	
+}
+/* CSS code related to My Services - End */
+
+
 /* =============== My Work Portfolio Samples - Mobile =============== */
 
 .my-work-samples-container img {
@@ -783,8 +830,49 @@ border-radius: 5px;
 	grid-row: 2;
 	align-self: stretch;
 }
-
 /* CSS code related to the About Page Containers - End */
+
+/* =============== My Services - Tablet =============== */
+
+.my-services-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.my-services-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, auto);
+	justify-items: center;
+	gap: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1;
+	grid-row: 1;
+	align-self:flex-start;
+}
+
+.YoungsterCrying {
+	grid-column: 2;
+	grid-row: 1;
+	align-self:stretch;
+}
+
+.FirstWeekSchool {
+	grid-column: 1;
+	grid-row: 2;
+	align-self: stretch;
+}
+
+.LegoCNTower {
+	grid-column: 2;
+	grid-row: 2;
+	align-self: stretch;
+}
+/* CSS code related to My Services - End */
 
 /* =============== My Work Portfolio Samples - Tablet =============== */
 
@@ -1072,8 +1160,43 @@ border-radius: 5px;
 	grid-row: 1;
 	align-self: stretch;
 }
-
 /* CSS code related to the About Page Containers - End */
+
+/* =============== My Services - Desktop =============== */
+
+.my-services-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.my-services-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	justify-items: center;
+	gap: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1;
+	grid-row: 1;
+	align-self:flex-start;
+}
+
+.YoungsterCrying {
+	grid-column: 2;
+	grid-row: 1;
+	align-self: stretch;
+}
+
+.FirstWeekSchool {
+	grid-column: 3;
+	grid-row: 1;
+	align-self: stretch;
+}
+
+/* CSS code related to My Services Containers - End */
+
 
 /* =============== My Work Portfolio Samples - Desktop =============== */
 
@@ -1084,7 +1207,7 @@ border-radius: 5px;
 
 .my-work-samples-container {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, auto);
 	justify-items: center;
 	gap: 1em;
@@ -1109,8 +1232,8 @@ border-radius: 5px;
 }
 
 .LegoCNTower {
-	grid-column: 4;
-	grid-row: 1;
+	grid-column: 1;
+	grid-row: 2;
 	align-self: stretch;
 }
 
@@ -1249,8 +1372,44 @@ border-radius: 5px;
 		grid-row: 1;
 		align-self: stretch;
 	}
-
 	/* CSS code related to the About Page Containers - End */
+
+
+	/* =============== My Services - Extended Desktop =============== */
+
+	.my-services-container img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.my-services-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
+		justify-items: center;
+		gap: 1em;
+	}
+
+	.FamilyPortrait {
+		grid-column: 1;
+		grid-row: 1;
+		align-self:flex-start;
+	}
+
+	.YoungsterCrying {
+		grid-column: 2;
+		grid-row: 1;
+		align-self: stretch;
+	}
+
+	.FirstWeekSchool {
+		grid-column: 3;
+		grid-row: 1;
+		align-self: stretch;
+	}
+
+	/* CSS code related to My Services Containers - End */
+
 
 	/* =============== My Work Portfolio Samples - Extended Desktop =============== */
 
@@ -1290,7 +1449,6 @@ border-radius: 5px;
 		grid-row: 1;
 		align-self: stretch;
 	}
-
 	/* CSS code related to My Work Samples Containers - End */
 
  } /* Extended Desktop media screen bracket ends here */
