@@ -77,7 +77,7 @@ table {
 	src: url('../webFonts/TheHandnatureSwash/font.woff2') format('woff2'), url('../webFonts/TheHandnatureSwash/font.woff') format('woff');
   }
 
-
+/*
 @font-face {
 	font-family: "LDColarino-Type18";
 	src: url('../webFonts/LDColarinoType18/font.woff2') format('woff2'), url('../webFonts/LDColarinoType18/font.woff') format('woff');
@@ -92,8 +92,10 @@ table {
 	font-family: "LDColarino-Type27";
 	src: url('../webFonts/LDColarinoType27/font.woff2') format('woff2'), url('../webFonts/LDColarinoType27/font.woff') format('woff');
   }
+*/
 
-/*
+
+/*  */
 @font-face {
 	font-family: "LDColarino-Type18";
 	src: url('../fonts/Type18.otf');
@@ -108,7 +110,7 @@ table {
 	font-family: "LDColarino-Type27";
 	src: url('../fonts/Type27.otf');
   }
-*/
+
 
 
   /* Marky Dee Fonts - End */
@@ -145,7 +147,7 @@ header, footer {
 }
 
 h1 {
-	font-family: "LDColarino-Type18";
+	font-family: "LDPacardo-Regular";
 	font-size: 28px;
 	color: #f2f2f2;
 }
@@ -184,7 +186,6 @@ html {
 
 .header-nav .current {
 	color: #656f8c;
-	border: 1px groove;
 }
 
 
@@ -222,6 +223,8 @@ html {
 	text-align: center;
 	align-self: center;
 	height: 100%;
+	padding-top: 20px;
+	padding-bottom: 0px;
 }
 /* CSS code related to the main section sizing and styling - end */
 
@@ -305,11 +308,13 @@ html {
 
 a:hover, a:focus, button:hover, button:focus {
 	background-color: #f2f2f2;
+	border-radius: 5px;
 }
 
 a:active, button:active {
 color: #271540;
 background-color: #f7b400;
+border-radius: 5px;
 }
 
 /* CSS code related to the logo animation - end */
@@ -556,7 +561,7 @@ form textarea {
 	}
 	
 	h2 {
-		font-family: "LDColarino-Type18";
+		font-family: "LDColarino-Type19";
 		font-size: 28px;
 	}
 	
@@ -572,6 +577,8 @@ form textarea {
 		width: 100%;
 		max-width: 1920px;
 		margin: 0 auto;
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
 
 	.animation-logo:active {
@@ -790,6 +797,51 @@ form textarea {
 	}
 
 
+/* CSS code related to the About Page Containers - Start */
+
+.about-intro-container {
+	display: flex;
+	flex-direction: row;
+}
+
+/* =============== My Story Timeline - Desktop =============== */
+
+.my-timeline-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(3, auto);
+	justify-items: center;
+	gap: 1em;
+}
+
+.FamilyPortrait {
+	grid-column: 1 / span 2;
+	grid-row: 1 / 1;
+	align-self:flex-start;
+}
+
+.YoungsterCrying {
+	grid-column: 1 / span 3;
+	grid-row: 2 / 2;
+	align-self:stretch;
+}
+
+.FirstWeekSchool {
+	grid-column: 4 / span 3;
+	grid-row: 2 / 2;
+	align-self: stretch;
+}
+
+.LegoCNTower {
+	grid-column: 1 / span 2;
+	grid-row: 3 / 3;
+	align-self: stretch;
+}
+
+/* CSS code related to the About Page Containers - End */
+
+
+
 } /* Desktop media screen bracket ends here */
 
 /* **************** Desktop Styling Ends Here **************** */
@@ -809,7 +861,7 @@ form textarea {
 	}
 	
 	h2 {
-		font-family: "LDColarino-Type18";
+		font-family: "LDColarino-Type19";
 		font-size: 44px;
 	}
 	
@@ -830,6 +882,8 @@ form textarea {
 		width: 100%;
 		max-width: 100%;
 		margin: 0 auto;
+		padding-top: 20px;
+		padding-bottom: 0px;
 	}
 
 	.main-container img {
