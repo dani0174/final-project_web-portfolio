@@ -192,6 +192,12 @@ h6 {
 	color: #473273;
 }
 
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
 #MD-signature {
 	font-size: 72px;
 }
@@ -212,7 +218,7 @@ blockquote {
 }
 
 html {
-	min-width: 250px;
+	min-width: 350px;
 }
 
 .header-nav .current {
@@ -381,10 +387,19 @@ border-radius: 5px;
 
 /* CSS code related to contact_us.html - start */
 
+.contact-form {
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	align-self: center;
+	justify-self: center;
+}
+
 .contact-container form input,
 form textarea {
   	display: block;
-  	width: 90%;
+  	width: 250px;
   	margin-bottom: 1rem;
   	padding: .5rem 1rem;
   	color: #271540;
@@ -411,12 +426,12 @@ form textarea {
 }
 
 .contact-container form {
-	border-style: solid;
+	border-style: none;
   	border-width: 1px;
   	border-color: black;
 	margin: 5px;
 	padding: 10px;
-	padding-top: 15px;
+	padding-top: 0px;
 	color: #FFF;
 	font-family: "LDPacardo-Thin";
  }
@@ -441,13 +456,21 @@ form textarea {
 	line-height: 150%;
 	justify-content: space-between;
 }
-  
-.owner h2 {
-	align-self: flex-start;
+ 
+.owner h5 {
+	align-self: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  }
+
+.contact-section h5 {
+	align-self: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
   }
   
 .google-maps-element {
-	padding-left: 5%;
+	padding-left: 2%;
   }
   
 .owner-contact-items {
@@ -473,7 +496,7 @@ form textarea {
 	line-height: 150%;
   }
   
-.main-content-contact h2, p {
+.main-content-contact h5, p {
 	padding: 5px;
 	align-self: center;
 	justify-self: center;
@@ -504,7 +527,6 @@ border-radius: 5px;
 .contact-grid-container {
 		width: 100%;
 		margin: 0 auto;
-		padding: 0 1rem;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		background-color:#656f8c;
@@ -514,7 +536,7 @@ border-radius: 5px;
 
   .contact-grid-container {
     display: grid;
-    width: 120%;
+    width: 100%;
     align-self: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -676,8 +698,10 @@ border-radius: 5px;
 }
 
 .contact-container {
-	width: 60%;
-	min-width: 400px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-width: 300px;
 }
 
 /* *************** Mobile Styling Ends Here *************** */
