@@ -480,6 +480,10 @@ form textarea {
 	line-height: 150%;
   }
 
+.contact-container {
+	max-width: 1200px;
+}
+
 .contact-container address {
 	font-size: 18px;
 	line-height: 150%;
@@ -497,7 +501,7 @@ background-color: #f7b400;
 border-radius: 5px;
 }
 
-.grid-container {
+.contact-grid-container {
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 1rem;
@@ -506,15 +510,21 @@ border-radius: 5px;
 		background-color:#656f8c;
 	}
 
-@media screen and (min-width: 835px) {
-  .grid-container {
+@media screen and (min-width: 845px) {
+
+  .contact-grid-container {
     display: grid;
-    width: 100%;
+    width: 120%;
     align-self: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 1em;
   }
+
+  .contact-container {
+	  width: 80%;
+  }
+
 }
 
 /* CSS code related to contact_us.html - end */
@@ -556,6 +566,7 @@ border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 1200px;
 }
 
 /* =============== My Story Timeline - Mobile =============== */
@@ -571,36 +582,6 @@ border-radius: 5px;
 	grid-template-rows: auto;
 	justify-items: center;
 	gap: 1em;
-}
-
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	justify-self: left;
-}
-
-.YoungsterCrying {
-	grid-column: 1;
-	grid-row: 2;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;	
-}
-
-.FirstWeekSchool {
-	grid-column: 1;
-	grid-row: 3;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;
-}
-
-.LegoCNTower {
-	grid-column: 1;
-	grid-row: 4;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;	
 }
 
 /* CSS code related to the About Page Containers - End */
@@ -619,36 +600,6 @@ border-radius: 5px;
 	justify-items: center;
 	gap: 1em;
 }
-
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	justify-self: left;
-}
-
-.YoungsterCrying {
-	grid-column: 1;
-	grid-row: 2;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;	
-}
-
-.FirstWeekSchool {
-	grid-column: 1;
-	grid-row: 3;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;
-}
-
-.LegoCNTower {
-	grid-column: 1;
-	grid-row: 4;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;	
-}
 /* CSS code related to My Services - End */
 
 
@@ -666,40 +617,68 @@ border-radius: 5px;
 	justify-items: center;
 	gap: 1em;
 }
-
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	justify-self: left;
-}
-
-.YoungsterCrying {
-	grid-column: 1;
-	grid-row: 2;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;	
-}
-
-.FirstWeekSchool {
-	grid-column: 1;
-	grid-row: 3;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;
-}
-
-.LegoCNTower {
-	grid-column: 1;
-	grid-row: 4;
-	align-self: center;
-	background-color: #ffe6ac;
-	padding-bottom: 16px;	
-}
-
 /* CSS code related to My Work Samples Containers - End */
 
+.about-grid-container {
+	display: grid;
+	width: 95%;
+	margin: 0 auto;
+	padding: 0 1rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
+#side-profile-pic {
+	grid-column: 1;
+	grid-row: 1;
+	align-self: center;
+	justify-self: center;
+}
+
+@media screen and (min-width: 600px) {
+  .about-grid-container {
+    display: grid;
+    width: 100%;
+    align-self: center;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: repeat(3, auto);
+    gap: 1em;
+  }
+
+  #side-profile-pic {
+	  	grid-column: 1;
+	  	grid-row: 1 / span 3;
+	  	align-self: center;
+	  	justify-self: center;
+  }
+
+  #about-grid-rightside-1 {
+	  	grid-column: 2;
+	  	grid-row: 1;
+	  	align-self: center;
+	  	justify-self: center;
+  }
+
+  #about-grid-rightside-2 {
+		grid-column: 2;
+		grid-row: 2;
+		align-self: center;
+		justify-self: center;
+	}
+
+#about-grid-rightside-3 {
+		grid-column: 2;
+		grid-row: 3;
+		align-self: center;
+	  	justify-self: center;
+	}
+
+}
+
+.contact-container {
+	width: 60%;
+	min-width: 400px;
+}
 
 /* *************** Mobile Styling Ends Here *************** */
 /* ******************************************************** */
@@ -744,6 +723,7 @@ border-radius: 5px;
 		transform: rotate(180deg) translateX(40rem) rotate(180deg) scale(1.1);
 		transition: 1.5s;
 	}
+
 
 /* Container holding the image and the text */
 .welcome-container {
@@ -806,30 +786,6 @@ border-radius: 5px;
 	padding-left: 1em;
 	padding-right: 1em;
 }
-
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	align-self:flex-start;
-}
-
-.YoungsterCrying {
-	grid-column: 2;
-	grid-row: 1;
-	align-self:stretch;
-}
-
-.FirstWeekSchool {
-	grid-column: 1;
-	grid-row: 2;
-	align-self: stretch;
-}
-
-.LegoCNTower {
-	grid-column: 2;
-	grid-row: 2;
-	align-self: stretch;
-}
 /* CSS code related to the About Page Containers - End */
 
 /* =============== My Services - Tablet =============== */
@@ -847,30 +803,6 @@ border-radius: 5px;
 	gap: 1em;
 	padding-left: 1em;
 	padding-right: 1em;
-}
-
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	align-self:flex-start;
-}
-
-.YoungsterCrying {
-	grid-column: 2;
-	grid-row: 1;
-	align-self:stretch;
-}
-
-.FirstWeekSchool {
-	grid-column: 1;
-	grid-row: 2;
-	align-self: stretch;
-}
-
-.LegoCNTower {
-	grid-column: 2;
-	grid-row: 2;
-	align-self: stretch;
 }
 /* CSS code related to My Services - End */
 
@@ -890,31 +822,6 @@ border-radius: 5px;
 	padding-left: 1em;
 	padding-right: 1em;
 }
-
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	align-self:flex-start;
-}
-
-.YoungsterCrying {
-	grid-column: 2;
-	grid-row: 1;
-	align-self:stretch;
-}
-
-.FirstWeekSchool {
-	grid-column: 1;
-	grid-row: 2;
-	align-self: stretch;
-}
-
-.LegoCNTower {
-	grid-column: 2;
-	grid-row: 2;
-	align-self: stretch;
-}
-
 /* CSS code related to My Work Samples Containers - End */
 
 
@@ -1117,11 +1024,6 @@ border-radius: 5px;
 
 /* CSS code related to the About Page Containers - Start */
 
-.about-intro-container {
-	display: flex;
-	flex-direction: column;
-}
-
 /* =============== My Story Timeline - Desktop =============== */
 
 .my-timeline-container img {
@@ -1135,30 +1037,6 @@ border-radius: 5px;
 	grid-template-rows: repeat(3, auto);
 	justify-items: center;
 	gap: 1em;
-}
-
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	align-self:flex-start;
-}
-
-.YoungsterCrying {
-	grid-column: 2;
-	grid-row: 1;
-	align-self: stretch;
-}
-
-.FirstWeekSchool {
-	grid-column: 3;
-	grid-row: 1;
-	align-self: stretch;
-}
-
-.LegoCNTower {
-	grid-column: 4;
-	grid-row: 1;
-	align-self: stretch;
 }
 /* CSS code related to the About Page Containers - End */
 
@@ -1177,24 +1055,6 @@ border-radius: 5px;
 	gap: 1em;
 }
 
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	align-self:flex-start;
-}
-
-.YoungsterCrying {
-	grid-column: 2;
-	grid-row: 1;
-	align-self: stretch;
-}
-
-.FirstWeekSchool {
-	grid-column: 3;
-	grid-row: 1;
-	align-self: stretch;
-}
-
 /* CSS code related to My Services Containers - End */
 
 
@@ -1211,30 +1071,6 @@ border-radius: 5px;
 	grid-template-rows: repeat(3, auto);
 	justify-items: center;
 	gap: 1em;
-}
-
-.FamilyPortrait {
-	grid-column: 1;
-	grid-row: 1;
-	align-self:flex-start;
-}
-
-.YoungsterCrying {
-	grid-column: 2;
-	grid-row: 1;
-	align-self: stretch;
-}
-
-.FirstWeekSchool {
-	grid-column: 3;
-	grid-row: 1;
-	align-self: stretch;
-}
-
-.LegoCNTower {
-	grid-column: 1;
-	grid-row: 2;
-	align-self: stretch;
 }
 
 /* CSS code related to My Work Portfolio Samples Containers - End */
@@ -1390,24 +1226,6 @@ border-radius: 5px;
 		gap: 1em;
 	}
 
-	.FamilyPortrait {
-		grid-column: 1;
-		grid-row: 1;
-		align-self:flex-start;
-	}
-
-	.YoungsterCrying {
-		grid-column: 2;
-		grid-row: 1;
-		align-self: stretch;
-	}
-
-	.FirstWeekSchool {
-		grid-column: 3;
-		grid-row: 1;
-		align-self: stretch;
-	}
-
 	/* CSS code related to My Services Containers - End */
 
 
@@ -1426,29 +1244,6 @@ border-radius: 5px;
 		gap: 1em;
 	}
 
-	.FamilyPortrait {
-		grid-column: 1;
-		grid-row: 1;
-		align-self:flex-start;
-	}
-
-	.YoungsterCrying {
-		grid-column: 2;
-		grid-row: 1;
-		align-self: stretch;
-	}
-
-	.FirstWeekSchool {
-		grid-column: 3;
-		grid-row: 1;
-		align-self: stretch;
-	}
-
-	.LegoCNTower {
-		grid-column: 4;
-		grid-row: 1;
-		align-self: stretch;
-	}
 	/* CSS code related to My Work Samples Containers - End */
 
  } /* Extended Desktop media screen bracket ends here */
